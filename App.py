@@ -5,12 +5,24 @@ st.markdown("""
     background-image: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b");
     background-size: cover;
     background-position: center;
+    color: white;
+}
+
+/* Add dark overlay for readability */
+.stApp::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.65);
+    z-index: 0;
 }
 
 .block-container {
-    background-color: rgba(255, 255, 255, 0.85);
-    padding: 2rem;
-    border-radius: 10px;
+    position: relative;
+    z-index: 1;
 }
 </style>
 """, unsafe_allow_html=True)
