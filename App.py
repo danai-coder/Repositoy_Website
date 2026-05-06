@@ -34,7 +34,7 @@ st.set_page_config(
     layout="wide",
     initial_sidebar_state="expanded",
     menu_items={
-        "Get Help": "https://www.linkedin.com/in/danaiasefaw",
+        "Get Help": "mailto:danaiasefaw@gmail.com",
         "Report a bug": "mailto:danaiasefaw@gmail.com",
         "About": "Built using Streamlit for showcasing data science projects"
     }
