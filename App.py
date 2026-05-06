@@ -29,7 +29,7 @@ st.set_page_config(
 )
 # Sidebar
 st.sidebar.title("Navigation")
-page = st.sidebar.radio("Go to", ["Home", "Projects", "Skills", "Contact"])
+page = st.sidebar.radio("Go to", ["Home", "Education", "Projects", "Skills", "Contact"])
 
 # Home Page
 if page == "Home":
@@ -49,7 +49,66 @@ if page == "Home":
     - Machine Learning
     - Web Apps with Streamlit
     """)
+elif page == "Education":
+    st.title("📚 Education")
 
+    st.subheader("🎓 Master of Science in Computer Science")
+    st.write("""
+    **American National University — Louisville, KY**  
+    *2025 – 2026*  
+    """)
+    st.write("""
+    **Relevant Coursework:**
+    """)
+
+    courses = [
+        "Computer Networking and Telecommunications",
+        "Cloud Computing",
+        "Capstone in Computer Science Engineering",
+        "Distributed Systems",
+        "Practitioner Projects in Computer Science Engineering",
+        "Operating Systems",
+        "Database Design & Management",
+        "Design and Development of Security Architectures",
+        "Software Engineering",
+        "Big Data Analytics",
+        "Web-Based Research Methods",
+        "Information Security Project Management"
+    ]
+
+    for course in courses:
+        st.write(f"• {course}")
+    st.subheader("🎓 Professional Certificate in Computer & Data Science")
+    st.write("""
+    **Massachusetts Institute of Technology (MIT)** — MITx (via edX)  
+    *2020 – 2021*  
+    Focus Areas:
+    - Data Science & Machine Learning  
+    - Python Programming  
+    - Statistical Analysis  
+    """)
+    st.subheader("Bachelor of Medicine ")
+    st.write("""
+    **Orotta School of Medicine and Dental Medicine — Eritrea **
+    *2006 – 2014*  
+    """)
+    
+    st.subheader("🏅 Certifications")
+    st.markdown("""
+    **Data Science & AI**
+    - Foundations of Data Science — Coursera  
+    - AWS AI Practitioner Challenge  
+
+    **Professional Skills**
+    - Na’amal Remote Work Certification  
+    - Oyster Remote Ready Certification  
+
+    **Innovation & Leadership**
+    - Entrepreneurship, Innovation & Leadership Bootcamp — MIT ReACT  
+
+    **Programming**
+    - Learn Java with No Prior Programming Experience — Coursera  
+    """)
 # Projects Page
 elif page == "Projects":
     st.title("Projects")
@@ -82,7 +141,10 @@ elif page == "Skills":
     st.write("""
     - Python (Pandas, NumPy, Scikit-learn)
     - Power BI & Data Visualization
+    - Data Analysis & Statistical Modeling
     - SQL
+    - Machine Learning & Predictive Modeling
+    - Foundational Knowledge in Java and C Programming
     - Streamlit
     """)
 
