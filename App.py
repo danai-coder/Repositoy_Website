@@ -17,7 +17,7 @@ st.markdown("""
 
 # Page config
 st.set_page_config(
-    page_title="Danai Asefaw | Data Science Portfolio",
+    page_title="Danai Asefaw | MSc Computer Science | Data Science Portfolio",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
