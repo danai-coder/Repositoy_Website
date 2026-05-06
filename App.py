@@ -87,10 +87,11 @@ elif page == "Education":
     - Python Programming  
     - Statistical Analysis  
     """)
-    st.subheader("Bachelor of Medicine ")
+    st.subheader("🎓 Bachelor of Medicine")
+
     st.write("""
-    **Orotta School of Medicine and Dental Medicine — Eritrea **
-    *2006 – 2014*  
+    **Orotta School of Medicine and Dental Medicine, Eritrea**  
+    *2006 – 2014*
     """)
     
     st.subheader("🏅 Certifications")
@@ -115,7 +116,7 @@ elif page == "Projects":
 
     project = st.selectbox(
         "Select a project",
-        ["Customer Churn Model", "Health Risk Dashboard"]
+        ["Customer Churn Model", "Annual Medical Cost Prediction"]
     )
 
     if project == "Customer Churn Model":
@@ -154,4 +155,4 @@ elif page == "Contact":
 
     st.markdown("📧 Email: [danaiasefaw@gmail.com](mailto:danaiasefaw@gmail.com)")
     st.markdown("🔗 LinkedIn: [linkedin.com/in/danaiasefaw](https://www.linkedin.com/in/danaiasefaw)")
-    st.markdown("💻 GitHub: [github.com/danaiasefaw](https://github.com/danaiasefaw)")
+    st.markdown("💻 GitHub: [github.com/danai-coder](https://github.com/danai-coder)")
