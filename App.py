@@ -1,21 +1,47 @@
 import streamlit as st
 st.markdown("""
-    <style>
-        .main {background-color: #f5f5f5;}
-    </style>
+<style>
+.stApp {
+    background-image: url("https://images.unsplash.com/photo-1550751827-4bd374c3f58b");
+    background-size: cover;
+    background-position: center;
+}
+
+.block-container {
+    background-color: rgba(255, 255, 255, 0.85);
+    padding: 2rem;
+    border-radius: 10px;
+}
+</style>
 """, unsafe_allow_html=True)
 
 # Page config
-st.set_page_config(page_title="Danai Portfolio", layout="wide")
-
+st.set_page_config(
+    page_title="Danai Asefaw | Data Science Portfolio",
+    page_icon="📊",
+    layout="wide",
+    initial_sidebar_state="expanded",
+    menu_items={
+        "Get Help": "https://www.linkedin.com/in/danaiasefaw",
+        "Report a bug": "mailto:danaiasefaw@gmail.com",
+        "About": "Built using Streamlit for showcasing data science projects"
+    }
+)
 # Sidebar
 st.sidebar.title("Navigation")
 page = st.sidebar.radio("Go to", ["Home", "Projects", "Skills", "Contact"])
 
 # Home Page
 if page == "Home":
-    st.title("Danai Asefaw")
-    st.subheader("Data Analyst | Aspiring Data Scientist")
+    col1, col2 = st.columns([1, 2])
+
+    with col1:
+        st.image("assets/danai.jpg", width=180)
+
+    with col2:
+        st.title("Danai Asefaw")
+        st.subheader("Data Analyst | Data Scientist")
+        st.write("Welcome to my portfolio showcasing data science projects.")
 
     st.write("""
     Welcome to my portfolio! I specialize in:
