@@ -36,7 +36,7 @@ if page == "Home":
     col1, col2 = st.columns([1, 2])
 
     with col1:
-        st.image("assets\danai.jpg", width=180)
+        st.image("assets/danai.jpg", width=180)
 
     with col2:
         st.title("Danai Asefaw")
