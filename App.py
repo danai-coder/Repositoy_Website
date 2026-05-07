@@ -29,7 +29,7 @@ st.markdown("""
 
 # Page config
 st.set_page_config(
-    page_title="Danai Asefaw | MSc Computer Science | Data Science Portfolio",
+    page_title="Danai Asefaw | Data Science Portfolio",
     page_icon="📊",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -52,7 +52,7 @@ if page == "Home":
 
     with col2:
         st.title("Danai Asefaw")
-        st.subheader("Data Analyst | Data Scientist")
+        st.subheader("MSc Computer Science and Engineering | Data Scientist")
         st.write("Welcome to my portfolio showcasing data science projects.")
 
     st.write("""
